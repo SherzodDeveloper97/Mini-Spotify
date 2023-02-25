@@ -1,0 +1,25 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    border: none;
+    background-color: transparent;
+    border: 2px solid #ededed;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    span {
+      margin-right: 7px;
+    }
+    &:hover {
+      background-color: #444444;
+      color: #fff;
+    }
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+  }
+}
