@@ -8,10 +8,18 @@ const Library = ({
   isPlaying,
   setSongs,
   libraryStatus,
+  setLibraryStatus,
 }) => {
+  const removeLibraryList = () => {
+    setLibraryStatus(false);
+  };
+
   return (
     <div className={`library ${libraryStatus ? "active-library" : ""}`}>
-      <h2>Library</h2>
+      <div className="title__content">
+        <h2>Library</h2>
+        <i className="fa-solid fa-xmark close" onClick={removeLibraryList}></i>
+      </div>
       <div className="library__songs">
         {songs.map((song) => (
           <LibrarySong
